@@ -8,6 +8,7 @@ import Location from './components/Location/Location';
 import Investment from './components/Investment/Investment';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import './styles/global.css';
+import FAQ from './components/FAQ/FAQ';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
       <Benefits />
       <Location />
       <Investment />
+      <RegistrationForm />
+      <FAQ />
     </div>
   );
 }
