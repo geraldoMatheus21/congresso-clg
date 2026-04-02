@@ -1,0 +1,111 @@
+.investment {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.investment__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.investment__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.investment__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.investment__card {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.investment__card:hover {
+  transform: translateY(-5px);
+}
+
+.investment__card--featured {
+  border: 2px solid #eab308;
+}
+
+.investment__header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1.5rem;
+}
+
+.investment__header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.investment__price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #1e3a8a;
+}
+
+.investment__price small {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #6b7280;
+}
+
+.investment__features {
+  list-style: none;
+  padding: 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.investment__features li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.investment__features li::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+}
+
+.investment__button {
+  background-color: #eab308;
+  color: #1e3a8a;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.investment__button:hover {
+  background-color: #ca8a04;
+}
+
+@media (min-width: 768px) {
+  .investment__title {
+    font-size: 2.5rem;
+  }
+}

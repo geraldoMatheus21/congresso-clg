@@ -5,7 +5,10 @@ import Speakers from './components/Speakers/Speakers';
 import Schedule from './components/Schedule/Schedule';
 import Benefits from './components/Benefits/Benefits';
 import Location from './components/Location/Location';
+import Investment from './components/Investment/Investment';
+import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import './styles/global.css';
+
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
       <Schedule />
       <Benefits />
       <Location />
+      <Investment />
     </div>
   );
 }
