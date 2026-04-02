@@ -9,6 +9,7 @@ import Investment from './components/Investment/Investment';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import './styles/global.css';
 import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Investment />
       <RegistrationForm />
       <FAQ />
+      <Footer />
     </div>
   );
 }
