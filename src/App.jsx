@@ -3,6 +3,8 @@ import Audience from './components/Audience/Audience';
 import About from './components/About/About'
 import Speakers from './components/Speakers/Speakers';
 import Schedule from './components/Schedule/Schedule';
+import Benefits from './components/Benefits/Benefits';
+import Location from './components/Location/Location';
 import './styles/global.css';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <About />
       <Speakers />
       <Schedule />
+      <Benefits />
+      <Location />
     </div>
   );
 }
