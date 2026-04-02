@@ -1,0 +1,110 @@
+.schedule {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.schedule__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.schedule__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+/* Abas */
+.schedule__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.schedule__tab {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.schedule__tab:hover {
+  background-color: #e5e7eb;
+}
+
+.schedule__tab--active {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+/* Conteúdo da programação */
+.schedule__content {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.schedule__day {
+  display: none;
+}
+
+.schedule__day--active {
+  display: block;
+}
+
+.schedule__item {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule__item:last-child {
+  border-bottom: none;
+}
+
+.schedule__time {
+  font-weight: 600;
+  color: #1d4ed8;
+  margin-bottom: 0.25rem;
+}
+
+.schedule__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.schedule__panel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .schedule__title {
+    font-size: 2.5rem;
+  }
+  .schedule__item {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  .schedule__time {
+    width: 140px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+  .schedule__info {
+    flex: 1;
+  }
+}

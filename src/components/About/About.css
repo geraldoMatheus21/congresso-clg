@@ -1,0 +1,40 @@
+.about {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.about__text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #374151;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__highlight {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 2.5rem;
+  }
+  .about__text {
+    font-size: 1.25rem;
+  }
+}

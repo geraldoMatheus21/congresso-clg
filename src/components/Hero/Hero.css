@@ -1,0 +1,45 @@
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto 2rem auto;
+}
+
+.hero__button {
+  background: #eab308;
+  color: #1e3a8a;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero__button:hover {
+  background: #ca8a04;
+}
+
+.hero__date {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}

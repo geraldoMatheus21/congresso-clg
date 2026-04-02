@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto 2rem auto;
+}
+
+.hero__countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+}
+
+.hero__button {
+  background: #eab308;
+  color: #1e3a8a;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero__button:hover {
+  background: #ca8a04;
+}
+
+.hero__date {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+  .countdown-item {
+    width: 6rem;
+  }
+}
