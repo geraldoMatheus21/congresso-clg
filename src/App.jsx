@@ -10,14 +10,17 @@ import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import './styles/global.css';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
+import EventCountDown from './components/EventCountDown/EventCountDown';
 
 
 function App() {
   return (
     <div className="app">
       <Hero />
-      <Audience />
+      <EventCountDown />
       <About />
+      <Audience />
       <Speakers />
       <Schedule />
       <Benefits />
@@ -26,6 +29,7 @@ function App() {
       <RegistrationForm />
       <FAQ />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

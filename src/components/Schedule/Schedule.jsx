@@ -4,7 +4,6 @@ import './Schedule.css';
 function Schedule() {
   const [activeDay, setActiveDay] = useState('06');
 
-  // Dados conforme o PDF
   const scheduleData = {
     '06': [
       { time: '09h - 11h30', title: 'ASSESSORIA JURÍDICA: PRERROGATIVAS, PAPEL E RESPONSABILIZAÇÃO', panel: 'PAINEL 1' },
@@ -46,20 +45,13 @@ function Schedule() {
           ))}
         </div>
         <div className="schedule__content">
-          {Object.entries(scheduleData).map(([day, items]) => (
-            <div
-              key={day}
-              className={`schedule__day ${activeDay === day ? 'schedule__day--active' : ''}`}
-            >
-              {items.map((item, idx) => (
-                <div key={idx} className="schedule__item">
-                  <div className="schedule__time">{item.time}</div>
-                  <div className="schedule__info">
-                    <div className="schedule__title">{item.title}</div>
-                    {item.panel && <div className="schedule__panel">{item.panel}</div>}
-                  </div>
-                </div>
-              ))}
+          {scheduleData[activeDay].map((item, idx) => (
+            <div key={idx} className="schedule__item">
+            <div className="schedule__header">
+            <span className="schedule__time">{item.time}</span>
+            {item.panel && <span className="schedule__panel">{item.panel}</span>}
+            </div>
+            <div className="schedule__title">{item.title}</div>
             </div>
           ))}
         </div>
