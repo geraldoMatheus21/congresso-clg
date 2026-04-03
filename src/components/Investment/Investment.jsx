@@ -45,14 +45,15 @@ function Investment() {
               <div className="investment__header">
                 <h3>{plan.name}</h3>
               </div>
-              <div className="investment__price">
-                {plan.price} <small>{plan.period}</small>
-              </div>
               <ul className="investment__features">
                 {plan.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
+              {/* Preço movido para baixo da lista */}
+              <div className="investment__price">
+                {plan.price} <small>{plan.period}</small>
+              </div>
               <button className="investment__button">Garantir minha vaga</button>
             </div>
           ))}
